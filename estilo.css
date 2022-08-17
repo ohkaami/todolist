@@ -1,0 +1,100 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #FFEBFD;
+}
+
+.todo{
+	display: flex;
+	flex-direction: column;
+	width: 450px;
+	height: 400px;
+	align-items: center;
+	margin: 0 auto;
+	margin-top: 50px;
+	gap: 15px;
+
+}
+
+.todo_title{
+	font-family: "ATypewriterForMe";
+	margin-top: 20px;
+	font-size: 30px;
+	display: flex;
+	background-color: #B9D5F8;
+	width: 100%;
+	height: 80px;
+	justify-content: center;
+	padding-top: 20px;
+	box-shadow: 1px 1px 5px ;
+}
+
+
+.todo_list{
+	width: 100%;
+
+}
+
+.todo_item input[type='checkbox']{
+	width: 20px;
+	height: 20px;
+	font: inherit;
+}
+
+.todo_item > input[type='checkbox']:checked  + div {
+    text-decoration:line-through;
+}
+
+.todo_item input[type=button]{
+	width: 20px;
+	height: 20px;
+}
+
+.todo_item{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: left;
+	box-shadow:1px 1px 5px ;
+	padding: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-family: "ATypewriterForMe" ;
+	background-color: #F6B9F8;
+
+}
+
+.todo_item:hover{
+	cursor: pointer;
+    transition: all .5s ease;
+    background-color: #ECB0E6;
+}
+
+
+.todo_new_item{
+    display: flex;
+    background-color: #ECB0E6;
+    width: 100%;
+    height: 70px;
+    justify-content: space-evenly;
+    padding: 10px ;
+    box-shadow: 1px 1px 5px;
+    margin: 10px;
+    font: inherit;
+}
+
+
+.todo_new_item input{
+	width: 380px;
+	text-align: center;
+}
+
+.todo_new_item > input::placeholder {
+    font-style: italic;
+    font-weight: normal;
+    width: 100%;
+}
